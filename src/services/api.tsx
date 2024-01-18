@@ -1,5 +1,5 @@
 // src/services/api.js
-const apiUrl = 'http://localhost:8000';
+const apiUrl = 'https://keysearchbackend.vercel.app/';
 
 const getSearchVolume = async (keyword:any) => {
   const response = await fetch(`${apiUrl}/searchVolume/${keyword}`);
