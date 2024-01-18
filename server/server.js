@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: "https://keywordsearch.vercel.app/",
+    origin: "https://keywordsearch-zb29.vercel.app/",
     methods: ["POST","GET","PUT"],
     credentials: true
   }
@@ -18,6 +18,9 @@ app.use(express.json());
 
 connectDB();
 
+app.use('/',(req,res)=>{
+  res.json("HEllo")
+})
 app.use('/searchVolume',KeywordRoutes)
 
 const PORT = 8000;
