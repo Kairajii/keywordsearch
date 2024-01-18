@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: "https://keywordsearch-zb29.vercel.app/",
+    origin: "https://keywordsearch-zb29.vercel.app",
     methods: ["POST","GET","PUT"],
     credentials: true
   }
