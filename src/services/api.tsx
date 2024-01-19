@@ -1,5 +1,5 @@
 // src/services/api.js
-const apiUrl = 'https://keywordsearch-zb29.vercel.app';
+const apiUrl = 'http://localhost:8000';
 
 const getSearchVolume = async (keyword:any) => {
   const response = await fetch(`${apiUrl}/searchVolume/${keyword}`);
